@@ -33,5 +33,8 @@
    <!-- Volume Rocker Wake Support. Some devices do not support (PMU) this.
 	   Setting to false will disable Volume Rocker Wake support -->
     <bool name="config_show_volumeRockerWake">true</bool>
+
+    <!-- TouchKey Duration Pref -->
+    <bool name="config_show_touchKeyDur">true</bool>
     
 </resources>

@@ -63,8 +63,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := vision_andromadus_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30-3.0
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-linaro-4.7
-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 TARGET_PREBUILT_KERNEL := device/htc/msm7x30-common/msm7230/kernel
 
@@ -85,6 +84,16 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 # Use Legacy Trackpad
 BOARD_USE_LEGACY_TRACKPAD := true
 
+# For Legacy EGL
+BOARD_EGL_NEEDS_LEGACY_FB := true
+
+# For Legacy Camera
+BOARD_USES_QCOM_LEGACY_CAM_PARAMS := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/vision/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/htc/vision/configs/libbt_vndcfg.txt
+
+# No SDK blobs
+BUILD_EMULATOR_SENSORS_MODULE := false
+BUILD_EMULATOR_GPS_MODULE := false
