@@ -269,8 +269,8 @@ key Z              {
 key BUTTON_R2 {
   label:'?'
   base:'?'
-  shift, capslock:'?'
-  alt: '"'
+  shift, capslock:'"'
+  alt: '?'
   shift+alt: '"'
 }
 key COMMA          {
@@ -283,7 +283,7 @@ key COMMA          {
 key PERIOD         {
 	label:'.'       
 	base:'.'       
-	shift, capslock:'.'       
+	shift, capslock:','       
 	alt: ','       
 	shift+alt:','       
 }
@@ -343,19 +343,19 @@ key RIGHT_BRACKET  {
 	alt: ']'       
 	shift+alt:'}'       
 }
-key BACKSLASH      {
-	label:'\\'      
-	base:'\\'      
-	shift, capslock:'|'       
-	alt: '\\'      
-	shift+alt:'|'       
+key BACKSLASH       {
+	label:'\u0436'
+	base:'\u0436'
+	shift, capslock:'\u0416'
+	alt: '\u0445'
+    shift+alt:'\u0425'
 }
 key SEMICOLON      {
 	label:';'       
 	base:';'       
 	shift, capslock:';'       
-	alt: '?'       
-	shift+alt:'?'       
+	alt: '\''       
+	shift+alt:'\''       
 }
 key APOSTROPHE     {
 	label:'\''      
@@ -376,7 +376,7 @@ key AT             {
 	base:'@'       
 	shift, capslock:'@'       
 	alt: '~'       
-	shift+alt:'~'       
+	shift+alt:'~'
 }
 key PLUS           {
 	label:'+'       
@@ -390,11 +390,39 @@ key SEARCH         {
 	shift+alt:'\uEF01'  
 }
 key SCROLL_LOCK    {
-	label:':'       
-	base:':'       
-	shift, capslock:':'       
-	alt: ':'       
-	shift+alt:':'       
+        label:':'
+        base:':'
+        shift, capslock:':'
+        alt:':'
+        shift+alt:':'
+}
+key PROG_RED      {
+        label:'\\'
+        base:'\\'
+        shift, capslock:'^'
+        alt: '|'
+        shift+alt:'|'
+}
+key PROG_GREEN     {
+        label:'<'
+        base:'<'
+        shift, capslock:'['
+        alt: '{'
+        shift+alt:'{'
+}
+key PROG_YELLOW    {
+        label:'>'
+        base:'>'
+        shift, capslock:']'
+        alt: '}'
+        shift+alt:'}'
+}
+key PROG_BLUE    {
+        label:'`'
+        base:'`'
+        shift, capslock:'`'
+        alt: '`'
+        shift+alt:'`'
 }
 key META_RIGHT     {
 	label:'\uEF03'  
@@ -406,7 +434,8 @@ key META_RIGHT     {
 key INSERT         {
 	label:'?'       
 	base:'?'       
-	shift, capslock:'?'       
-	alt: '"'       
-	shift+alt:'"'       
+	shift, capslock:'"'       
+	alt: '?'       
+	shift+alt:'?'
+       
 }

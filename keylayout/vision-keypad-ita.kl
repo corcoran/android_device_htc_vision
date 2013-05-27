@@ -169,7 +169,7 @@ key 143   POWER             WAKE
 # key 147 "KEY_XFER"
 # key 148 "KEY_PROG1"
 # key 149 "KEY_PROG2"
-key 150   EXPLORER
+key 150   TAB
 # key 151 "KEY_MSDOS"
 key 152   POWER             WAKE
 # key 153 "KEY_DIRECTION"
@@ -203,9 +203,8 @@ key 180   NUMPAD_RIGHT_PAREN
 # key 181 "KEY_NEW"
 # key 182 "KEY_REDO"
 key 183   PROG_RED
-# key 183   F13
-# key 184   F14
-# key 185   F15
+key 184   PROG_GREEN
+key 185   PROG_YELLOW
 # key 186   F16
 # key 187   F17
 # key 188   F18

@@ -371,10 +371,31 @@ key SLASH          {
 	alt: '?'       
 	shift+alt:'\\'      
 }
+key PROG_RED  {
+        label:'\\'
+        base:'\\'
+        shift, capslock:'^'
+        alt: '|'
+        shift+alt:'|'
+}
+key PROG_GREEN  {
+        label:'<'
+        base:'<'
+        shift, capslock:'['
+        alt: '{'
+        shift+alt:'{'
+}
+key PROG_YELLOW {
+        label:'>'
+        base:'>'
+        shift, capslock:']'
+        alt: '}'
+        shift+alt:'}'
+}
 key AT             {
 	label:'@'       
 	base:'@'       
-	shift, capslock:'@'       
+	shift, capslock:'`'
 	alt: '~'       
 	shift+alt:'~'       
 }

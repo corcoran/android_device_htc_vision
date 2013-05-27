@@ -1,6 +1,5 @@
 type ALPHA
 # keycode      Display   Number    Base      Shift     Alt       Shift+Alt
-
 key 0              {
 	label:'0'       
 	base:'0'       
@@ -299,8 +298,8 @@ key SPACE          {
 	label:'\u0020'  
 	base:'\u0020'  
 	shift, capslock:'\u0020'  
-	alt: '\u0020'  
-	shift+alt:'\u0020'  
+	alt: '\uEF01'  
+	shift+alt:'\uEF01'  
 }
 key ENTER          {
 	label:'\u000A'  
@@ -372,15 +371,31 @@ key SLASH          {
 	alt: '?'       
 	shift+alt:'\\'      
 }
-key PROG_RED  {  
-	base: '\uEF01'
-	alt: '\uEF01'  
-	shift+alt:'\uEF01'  
+key PROG_RED  {
+        label:'\\'
+        base:'\\'
+        shift, capslock:'^'
+        alt: '|'
+        shift+alt:'|'
+}
+key PROG_GREEN  {
+        label:'<'
+        base:'<'
+        shift, capslock:'['
+        alt: '{'
+        shift+alt:'{'
+}
+key PROG_YELLOW {
+        label:'>'
+        base:'>'
+        shift, capslock:']'
+        alt: '}'
+        shift+alt:'}'
 }
 key AT             {
 	label:'@'       
 	base:'@'       
-	shift, capslock:'@'       
+	shift, capslock:'`'
 	alt: '~'       
 	shift+alt:'~'       
 }

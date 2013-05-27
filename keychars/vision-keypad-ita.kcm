@@ -263,8 +263,8 @@ key Z              {
 	label:'Z'       
 	base:'z'       
 	shift, capslock:'Z'       
-	alt: '\u00A3'  
-	shift+alt:'\u00A3'  
+        alt: '\u00A3'
+        shift+alt:'\u00A3'
 }           
 key BUTTON_R2 {
   label:'?'
@@ -298,8 +298,8 @@ key SPACE          {
 	label:'\u0020'  
 	base:'\u0020'  
 	shift, capslock:'\u0020'  
-	alt: '\u0020'  
-	shift+alt:'\u0020'  
+	alt: '\u0300'  
+	shift+alt:'\u0300'  
 }
 key ENTER          {
 	label:'\u000A'  
@@ -371,19 +371,33 @@ key SLASH          {
 	alt: '?'       
 	shift+alt:'\\'      
 }
-
 key PROG_RED  {
-       base: '\uEF01'
-       alt: '\uEF01'
-       shift+alt:'\uEF01'
+        label:'\\'
+        base:'\\'
+        shift, capslock:'^'
+        alt: '|'
+        shift+alt:'|'
 }
-
+key PROG_GREEN  {
+        label:'<'
+        base:'<'
+        shift, capslock:'['
+        alt: '{'
+        shift+alt:'{'
+}
+key PROG_YELLOW {
+        label:'>'
+        base:'>'
+        shift, capslock:']'
+        alt: '}'
+        shift+alt:'}'
+}
 key AT             {
 	label:'@'       
 	base:'@'       
-	shift, capslock:'@'       
-	alt: '@'       
-	shift+alt:'@'       
+        shift, capslock:'`'
+        alt: '~'
+        shift+alt:'~'
 }
 key PLUS           {
 	label:'+'       
