@@ -97,3 +97,5 @@ BOARD_BLUEDROID_VENDOR_CONF := device/htc/vision/configs/libbt_vndcfg.txt
 # No SDK blobs
 BUILD_EMULATOR_SENSORS_MODULE := false
 BUILD_EMULATOR_GPS_MODULE := false
+
+TARGET_QCOM_DISPLAY_VARIANT := legacy
